@@ -29,7 +29,7 @@ install_lxd() {
 install_ralpm() {
     mkdir $INSTALL_DIR
     cd $INSTALL_DIR
-    wget "https://github.com/shironved/ralos-package-manager/releases/download/2024.05.23/ralpm" -O $INSTALL_DIR/ralpm && chmod +x $INSTALL_DIR/ralpm
+    wget "https://github.com/shironved/ralos-package-manager/releases/download/v2024.07.20/ralpm" -O $INSTALL_DIR/ralpm && chmod +x $INSTALL_DIR/ralpm
     ./ralpm init
     echo "export PATH=\$PATH:$INSTALL_DIR:$INSTALL_DIR/bin/" >> ~/.bashrc
     cd ..
